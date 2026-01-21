@@ -1,0 +1,92 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+body {
+    background-image: url(imagens/pexels-eberhardgross-691668.jpg);
+    background-size: cover;
+    background-position: center;
+    font-family: "Noto Sans";
+}
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    
+    
+}
+
+#calculadora {
+    display: flex;
+    flex-wrap: wrap;
+
+    background-color: rgba(255, 255, 255, 0.301)
+    ;-webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    padding: 0px;
+    margin: 0;
+    width: 250px;
+    height: 350px;
+    padding: 20px;
+    border-radius: 30px;
+}
+
+#teclado {
+    width: 250px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 4px;
+    padding: 5px;
+    transform: translateX(-4px);
+    
+}
+#painel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input {
+    transform: translateX(7px);
+    width: 220px;
+    padding: 5px;
+    height: 30px;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.539);
+    font-size: 15px;
+    box-shadow: 1px 6px 10px rgba(0, 0, 0, 0.299);
+    border: white;
+    color: white;
+    
+}
+button {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    background-color: rgba(255, 255, 255, 0.311);
+    border-radius: 50%;
+    color: rgb(0, 0, 0);
+    font-size: 15px;
+    border-color: rgb(255, 255, 255);
+    box-shadow: 1px 6px 10px rgba(0, 0, 0, 0.299);
+}
+button:hover {
+    transform: translatey(-3px);
+    transition: all 0.5s ease-in-out;
+    transform: scale(1.1);
+    
+}
+#igual {
+    background-color: rgba(0, 0, 0, 0.539);
+    color: rgb(255, 254, 254);
+}
